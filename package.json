@@ -1,0 +1,26 @@
+{
+  "name": "fnamemodify",
+  "version": "0.0.0",
+  "description": "fnamemodify() from Vim for Node",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "~1.16.2"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/dtinth/node-fnamemodify.git"
+  },
+  "keywords": [
+    "vim",
+    "fnamemodify",
+    "filename-modifiers",
+    "file",
+    "path"
+  ],
+  "author": "Thai Pangsakulyanont <org.yi.dttvb@gmail.com>",
+  "license": "MIT"
+}
