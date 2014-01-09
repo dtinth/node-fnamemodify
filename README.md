@@ -16,7 +16,7 @@ Example:
 var fnamemodify = require('fnamemodify') 
 
 console.log(fnamemodify("main.c", ":p:h"))
-#=> /Users/dttvb/Projects/fnamemodify
+//=> /Users/dttvb/Projects/fnamemodify
 ```
 
 
