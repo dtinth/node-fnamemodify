@@ -1,6 +1,6 @@
 {
   "name": "fnamemodify",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "fnamemodify() from Vim for Node",
   "main": "index.js",
   "dependencies": {},
