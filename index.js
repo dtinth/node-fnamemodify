@@ -18,7 +18,7 @@ var EXTRACT = /(?::[p~\.htre]|:g?s\?[^\?]+\?[^\?]*\?)*$/
 
 function extract(input) {
   var mods  = ''
-  var fname = input.replace(RE, function(a) {
+  var fname = input.replace(EXTRACT, function(a) {
     mods = a
     return ''
   })
@@ -35,6 +35,8 @@ module.exports = function fnamemodify(fname, mods, opts) {
   opts = opts || { }
   return modify(fname, mods, opts)
 }
+
+module.exports.extract = extract
 
 function modify(fname, mods, options) {
   var cwd = options.cwd || process.cwd()

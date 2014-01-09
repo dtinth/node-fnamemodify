@@ -24,7 +24,13 @@ examples.forEach(function(example) {
 })
 
 it('when only one string is supplied, extract the modifiers from filename', function() {
-  assert.equal(modify('hello.txt.a.b.c.d.e:e:e:e'), 'c.d.e')
+  assert.equal(modify('hello.txt.a.b.c.d.e:e:e:e:r'), 'c.d')
+})
+
+it('::extract should extract into fname and mods', function() {
+  var result = modify.extract('abc.x:p:e')
+  assert.equal(result.fname, 'abc.x')
+  assert.equal(result.mods, ':p:e')
 })
 
 
