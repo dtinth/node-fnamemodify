@@ -20,3 +20,16 @@ console.log(fnamemodify("main.c", ":p:h"))
 ```
 
 
+`fnamemodify.extract({fname}{mods})`
+------------------------------------
+
+Extract the {mods} from the {fname}.
+
+Example:
+
+```javascript
+console.log(fnamemodify.extract('%:p:s?a?b?'))
+//=> { fname: '%', mods: ':p:s?a?b?' }
+```
+
+
